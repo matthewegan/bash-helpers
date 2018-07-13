@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker run \
+  --interactive \
+  --rm \
+  --tty \
+  --workdir /app \
+  --volume $PWD:/app \
+  node:alpine yarn "$@"

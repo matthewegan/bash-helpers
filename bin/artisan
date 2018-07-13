@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker run \
+  --interactive \
+  --rm \
+  --tty \
+  --volume $PWD:/usr/src/myapp \
+  --workdir /usr/src/myapp \
+  php:cli-alpine php artisan "$@"

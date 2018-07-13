@@ -1,0 +1,13 @@
+#!/bin/bash
+
+docker run \
+  --env SSH_AUTH_SOCK=/ssh-auth.sock \
+  --interactive \
+  --rm \
+  --tty \
+  --user $(id -u):$(id -g) \
+  --volume $PWD:/app \
+  --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
+  --volume /etc/group:/etc/group:ro \
+  --volume /etc/passwd:/etc/passwd:ro \
+  composer:latest "$@"
