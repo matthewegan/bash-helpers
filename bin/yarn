@@ -2,6 +2,7 @@
 
 docker run \
   --interactive \
+  --name yarn \
   --rm \
   --tty \
   --workdir /app \
