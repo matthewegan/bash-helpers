@@ -15,7 +15,7 @@ alias which='type -all'
 alias ~='cd ~'
 
 EDITOR='subl -w'
-PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/bin:$PATH"
 PS1='\u@\h:\W$ '
 
 export EDITOR PATH PS1
