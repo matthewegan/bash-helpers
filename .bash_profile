@@ -11,6 +11,7 @@ alias ll='ls -FGlAhp'
 alias mkdir='mkdir -p'
 alias mv='mv -v'
 alias rm='rm -vf'
+alias uuid="uuidgen | tr -d - | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
 alias which='type -all'
 alias ~='cd ~'
 
