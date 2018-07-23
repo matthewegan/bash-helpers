@@ -7,4 +7,4 @@ docker run \
   --tty \
   --workdir /app \
   --volume $PWD:/app \
-  node:alpine yarn "$@"
+  node:latest yarn "$@"
