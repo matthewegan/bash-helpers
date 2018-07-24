@@ -5,6 +5,7 @@ fi
 alias ...='cd ../../'
 alias ..='cd ../'
 alias cp='cp -v'
+alias dcup='docker-compose up --detach --remove-orphans --force-recreate'
 alias dlogs='docker logs --tail 50 --follow --timestamps'
 alias f='open -a Finder ./'
 alias grep='grep -i'
