@@ -5,6 +5,7 @@ docker run \
   --name yarn \
   --rm \
   --tty \
-  --workdir /app \
+  --volume "$HOME/.cache/yarn":/tmp/.cache/yarn \
   --volume $PWD:/app \
+  --workdir /app \
   node:latest yarn "$@"
