@@ -18,6 +18,10 @@ alias uuid="uuidgen | tr -d - | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcop
 alias which='type -all'
 alias ~='cd ~'
 
+phpfix() {
+  php-cs-fixer fix $1 --rules=@PSR2
+}
+
 EDITOR='subl -w'
 PATH="$HOME/bin:/usr/local/bin:$PATH"
 PS1='\u@\h:\W$ '
